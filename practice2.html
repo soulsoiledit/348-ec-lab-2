@@ -1,29 +1,10 @@
 <html>
   <head>
-    <h1>EECS 348 Lab 7: Practice 2</h1>
-    <script>
-    function styleChange() {
-      var parColor = document.getElementById("parColor").value;
-      var borderColor = document.getElementById("borderColor").value;
-      var borderWidth = document.getElementById("borderWidth").value;
-
-      var element = document.getElementById('paragraph');
-      element.style.backgroundColor = parColor;
-      element.style.borderColor = borderColor;
-      element.style.borderWidth = borderWidth;
-    }
-    </script> 
-    <style>
-      p {
-        background-color: #ffffff;
-        border-style: solid;
-        border-color: #000000;
-        border-width: 2;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles/practice2.css">
+    <script src="./scripts/practice2.js"></script> 
   </head>
   <body>
-
+    <h1>EECS 348 Lab 7: Practice 2</h1>
     <p id="paragraph">This is some dummy text for this dummy paragraph.</p>
     <form>
         Paragraph color: <input id="parColor" value="#ffffff"><br>

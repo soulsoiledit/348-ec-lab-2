@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  font: 16px monospace;
+  color: #313244;
+
+  background-image: 
+    linear-gradient(#eff1f5a0, #eff1f5a0),
+    url('../images/background.png');
+}
+
+.centerText {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
