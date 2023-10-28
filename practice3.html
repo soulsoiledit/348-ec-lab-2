@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <h1>EECS 348 Lab 7: Practice 3</h1>
+    <script>
+    function verify() {
+      var pass1 = document.getElementById("pass1").value;
+      var pass2 = document.getElementById("pass2").value;
+
+      tooShort = (pass1.length < 8) || (pass2.length < 8);
+      match = pass1 === pass2;
+
+      if (tooShort) {
+        if (pass1.length < 8) {
+          alert("The first password is too short!");
+        } else {
+          alert("The second password is too short!");
+        }
+      } else if (match) {
+        alert("Everything looks good!");
+      } else {
+        alert("The passwords don't match!");
+      }
+    }
+    </script> 
+  </head>
+  <body>
+
+    <form>
+        Enter password: <input id="pass1"><br>
+        Reenter password: <input id="pass2"><br>
+      <input type="button" onclick="verify()" value="Verify">
+    </form>
+  </body>
+</html> 
